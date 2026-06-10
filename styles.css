@@ -370,6 +370,9 @@ ul, ol {
 }
 
 .hero-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-family: var(--font-serif);
   font-size: clamp(3.5rem, 8vw, 7rem);
   font-weight: 900;
@@ -380,9 +383,13 @@ ul, ol {
 }
 
 .hero-name .accent {
-  display: block;
-  font-size: clamp(1.2rem, 3.5vw, 2.5rem);
-  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  align-items: center;
+  width: auto;
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  font-weight: 500;
   margin-top: 0.5rem;
   letter-spacing: normal;
   white-space: nowrap;
